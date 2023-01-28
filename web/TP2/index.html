@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Notre FAV BU</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+
+</head>
+<body>
+	<div id="app">
+		{{	message	}}
+	</div>
+
+	<script>
+		let app = Vue.createApp({
+			data () { 
+				return {
+					message:'Hello There'
+				}
+			}
+		}).mount("#app");
+	</script>
+</body>
+</html>
