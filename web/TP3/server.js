@@ -13,8 +13,8 @@ http.createServer((req, res) => {
 
       
       // Envoyer la réponse avec les éléments
-      res.write(200, {'Content-Type': 'text/html'});
-      res.end('<li>' + list.pokemons.join('</li><li>'));
+      res.writeHead(200, {'Content-Type': 'text/html'});
+      res.end('<li>' + list.pokedex.join('</li><li>'));
     }
   });
 }).listen(3000);
