@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Notre FAV BU</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body style="height:600px ;">
+	<div id="app">
+		<composant_parent></composant_parent>
+	</div>
+
+	<script>
+		let app = Vue.createApp({});
+		let composantParent = app.component("composant_parent", 
+			{
+				data:function(){}, 
+				template: `
+							<div id="titre">
+                				<h1>Notre super bibiothèque</h1>
+            				</div>
+            				<div style="display: flex; height: 100%;">
+            					<div id = "menu">
+									<component_filter></component_filter>
+									<component_sort></component_sort>
+								</div>	
+								<component_libary></component_libary>
+							</div>
+
+						`
+			}
+
+		);
+
+		
+		let componentSort = app.component("component_sort", 
+			{
+				data:function(){}, 
+				template:`
+				<div id="menu">
+						<div>
+                            <h3>Tri :</h3>
+
+                            <select>
+                                <option>-------------Trier-------------</option>
+                                <option>Alphabétique</option>
+                                <option>Alphabétique Inversée</option>
+                            </select>
+
+
+                        </div>
+						</div>
+						
+						`
+			}
+		);
+
+		let componentFilter = app.component("component_filter", 
+			{
+				data:function(){
+					
+				},
+				template:`<div style="display: flex;">
+                    		<div id="menu">
+                        		<div style="text-decoration: underline;">
+                        			<h2 style="font-weight: bold;">Filtres :</h2>
+                        		</div>	
+                        
+                        		<div id="Players">
+									<h3>Players</h3>
+									<div>
+										<input type="checkbox" value="Multijoueur" id="Multijoueur" name="Multijoueur" class="filter-checkbox" checked="">
+										<label for="">Multijoueur</label>
+									</div>
+
+									<div>
+										<input type="checkbox" value="Solo" id="Solo" name="Solo" class="filter-checkbox" checked="">
+										<label for="">Solo</label>
+									</div>
+								</div>	
+							</div>	
+							
+
+						`,
+
+					methods: {
+						
+					}
+			
+			}
+		);
+
+		let componentLibary = app.component("component_libary", 
+			{
+				data:function(){
+					return {
+						items:[
+							{class: 'grid-item Multijoueur game', image:'img/Apex.jpeg', title:"Apex"},
+							{class: 'grid-item Multijoueur game', image:'img/callof.jpg', title:"Call Of Duty"},
+							{class: 'grid-item Multijoueur game', image:'img/fifa.jpg', title:"fifa 23"},
+							{class: 'grid-item Multijoueur game', image:'img/fortnite.jpeg', title:"Fortnite"},
+							{class: 'grid-item Solo game', image:'img/godof.jpeg', title:"God of War"},
+							{class: 'grid-item Multijoueur game', image:'img/gta.jpg', title:"GTA V"},
+							{class: 'grid-item Multijoueur game', image:'img/naruto.jpeg', title:"Naruto Storm 4"},
+							{class: 'grid-item Multijoueur game', image:'img/nba.jpeg', title:"NBA 2K23"},
+							{class: 'grid-item Multijoueur game', image:'img/overwatch.jpeg', title:"Overwatch 2"},
+							{class: 'grid-item Multijoueur game', image:'img/spiderman.jpg', title:"Spiderman"},
+							{class: 'grid-item Multijoueur game', image:'img/red.jpeg', title:"Red Dead Redemption II"},
+							{class: 'grid-item Multijoueur game', image:'img/rocket.jpg', title:"Rocket League"},
+							{class: 'grid-item Multijoueur game', image:'img/star.jpeg', title:"Star Wars"},
+							{class: 'grid-item Multijoueur game', image:'img/tekken.jpeg', title:"Tekken 7"},
+							{class: 'grid-item Solo game', image:'img/uncharted.jpg', title:"Uncharted 4"},
+							{class: 'grid-item Multijoueur game', image:'img/wwe.jpeg', title:"WWE 2K23"},
+							{class: 'grid-item Multijoueur game', image:'img/xenoverse2.jpg', title:"Dragon Ball Xenoverse 2"},
+							{class: 'grid-item Multijoueur game', image:'img/rollerChampion.jpg', title:"Roller Champion"},
+						]
+					}
+				}, 
+				template:`
+					<ul style="list-style-type: none;" class="grid-container" id="container">
+						<li v-for = "item in getItems()" :class="item.class" >
+							<img :src = "item.image">
+							<figcaption>{{item.title}}</figcaption>
+						</li>
+
+					</ul>
+				`,
+
+				methods: {
+					getItems() {
+						return this.items
+					}
+				}
+			}
+		);
+
+		app.mount("#app");
+	</script>
+</body>
+</html>
