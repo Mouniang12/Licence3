@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>notre super Bu</title>
+    </head>
+
+    <body style="height: 600px;">
+
+        <div>
+                <div id="titre">
+                <h1>Notre super bibiothèque</h1>
+            </div>
+
+            <div>
+
+                <div style="display: flex; height: 100%;">
+                    <div id="menu">
+                        <div style="text-decoration: underline;">
+                        	<h2 style="font-weight: bold;">Filtres :</h2>
+                        </div>	
+                        
+                        <div id="Players">
+                            <h3>Players</h3>
+
+                            
+                            <div id = "filter">
+                            	<div>
+                                	<input type="checkbox" value="Multijoueur" id="Multijoueur" name="Multijoueur" class="filter-checkbox" checked="">
+                                	<label for="">Multijoueur</label>
+                            	</div>
+
+                            	<div>
+                                	<input type="checkbox" value="Solo" id="Solo" name="Solo" class="filter-checkbox" checked="">
+                                	<label for="">Solo</label>
+                           		</div>
+                           	</div>	
+
+                            <div id="no-results" style="display: none;">No filter results.</div>
+                        </div>
+
+
+                        <div>
+                            <h3>Tri :</h3>
+
+                            <select>
+                                <option>-------------Trier-------------</option>
+                                <option>Alphabétique</option>
+                                <option>Alphabétique Inversée</option>
+                            </select>
+
+
+                        </div>
+                    </div>
+
+                <div style="margin: auto;">
+                    <ul style="list-style-type: none;" class="grid-container" id="container">
+                        <li class = "grid-item Multijoueur game" id="Apex" data-value = "Multijoueur">
+                        	<img src="img/Apex.jpeg" alt="">
+                        	<figcaption>Apex</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="CallOfDuty" data-value = "Multijoueur">
+                        	<img src="img/callof.jpg" alt="">
+                        	<figcaption>Call Of Duty</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="Fifa" data-value = "Multijoueur">
+                        	<img src="img/fifa.jpg" alt="">
+                        	<figcaption>Fifa 23</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="Fortnite" data-value = "Multijoueur">
+                        	<img src="img/fortnite.jpeg" alt="">
+                        	<figcaption>Fortnite</figcaption>
+                        </li>
+
+
+                        <li class="grid-item Solo game" id="godof" data-value = "Multijoueur">
+                        	<img src="img/godof.jpeg" alt="">
+                        	<figcaption>God of War</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" data-value = "Multijoueur">
+                        	<img src="img/gta.jpg" alt="">
+                        	<figcaption>GTA 5</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="NarutoStorm4" data-value = "Multijoueur">
+                        	<img src="img/naruto.jpeg" alt="">
+                        	<figcaption>Naruto Storm 4</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="NBA2K23" data-value = "Multijoueur">
+                        	<img src="img/nba.jpeg" alt="">
+                        	<figcaption>NBA 2K23</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="Overwatch2" data-value = "Multijoueur">
+                        	<img src="img/overwatch.jpeg" alt="">
+                        	<figcaption>Overwatch 2</figcaption>
+                        </li>
+
+                        <li class="grid-item Solo game" id="Spiderman" data-value = "Solo">
+                        	<img src="img/spiderman.jpg" alt="">
+                        	<figcaption>Spiderman</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="RedDeadRedemptionII" data-value = "Multijoueur">
+                        	<img src="img/red.jpeg" alt="">
+                        	<figcaption style="margin-top: -75px;">Red Dead Redemption II</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="RocketLeague" data-value = "Multijoueur">
+                        	<img src="img/rocket.jpg" alt="">
+                        	<figcaption>Rocket League</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="StarWars" data-value = "Multijoueur">
+                        	<img src="img/star.jpeg" alt="">
+                        	<figcaption>Star Wars</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="RollerChampion" data-value = "Multijoueur">
+                        	<img src="img/rollerChampion.jpg" alt="">
+                        	<figcaption style="margin-top: -75px;">Roller Champion</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="Tekken7" data-value = "Multijoueur">
+                        	<img src="img/tekken.jpeg" alt="">
+                        	<figcaption>Tekken 7</figcaption>
+                        </li>
+
+                        <li class="grid-item Solo game" id="Uncharted4" data-value = "Solo">
+                        	<img src="img/uncharted.jpg" alt="">
+                        	<figcaption>Uncharted 4</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id ="WWE2K23" data-value = "Multijoueur">
+                        	<img src="img/wwe.jpeg" alt="">
+                        	<figcaption>WWE 2K23</figcaption>
+                        </li>
+
+                        <li class="grid-item Multijoueur game" id="DragonBallXenoverse2" data-value = "Multijoueur">
+                        	<img src="img/xenoverse2.jpg" alt="">
+                        	<figcaption style="margin-top: -75px;">Dragon Ball Xenoverse 2</figcaption>
+                        </li>
+
+                    </ul>
+                </div>    
+            </div>
+        </div>
+
+       <script type="text/javascript" src="filter-checkbox.js"></script>
+
+       <script src="selector-filter.js"></script>
+
+    </body>
+</html>
