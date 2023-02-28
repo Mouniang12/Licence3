@@ -1,0 +1,130 @@
+/*
+__________________________________________________________________________________________________________________________________________
+------------------------------------css barre de tache menu-----------------------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________
+*/
+
+#logo-menu {
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+#logo img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+#menu input {
+    padding-left: 30px;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+#random {
+    margin-right: 50px;
+}
+
+
+#fb {
+    margin-right: 5px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 31px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#fb a:visited {
+    color: white;
+    background-color: blue;
+}
+
+#instagram {
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 30px;
+    margin-top: 31px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    color: white;
+    background: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306c, #FD1D1D);
+}
+
+#instagram a:visited {
+    color: white;
+    background: linear-gradient(45DEG, #405DE6, #5851DB, #833AB4, #C13584, #E1306c, #FD1D1D);
+}
+
+#twitter {
+    margin-right: 5px;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-top: 31px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(18, 172, 233);
+    cursor: pointer;
+}
+
+#twitter a:visited {
+    color: white;
+    background-color: rgb(18, 172, 233);
+}
+
+#github {
+    margin-right: 5px;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-top: 31px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#github a:visited {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#gmail {
+    cursor: pointer;
+}
+
+#gmail img {
+    width: 40px;
+    height: 40px;
+    margin-top: 33px;
+    margin-right: 5px;
+    font-size: 30px;
+    margin-left: 0px;
+
+}
+
+/*
+__________________________________________________________________________________________________________________________________________
+------------------------------------ fin css barre de tache menu-----------------------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________
+*/
